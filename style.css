@@ -1,0 +1,79 @@
+body {
+  background: #ffe6f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Balloon Text */
+#balloonText {
+  position: absolute;
+  top: -100px;
+  font-size: 40px;
+  color: #ff4081;
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+/* Cake Base */
+.cake-container {
+  position: relative;
+  width: 200px;
+  height: 250px;
+}
+
+/* Cake Layers */
+.cake {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.layer1 {
+  background: #ff9aa2;
+  bottom: 0;
+}
+
+.layer2 {
+  background: #ffb7b5;
+  bottom: 50px;
+  width:150px;
+}
+
+.layer3 {
+  background: #ffdac1;
+  bottom: 100px;
+  width: 130px;
+}
+
+/* Candle */
+.candle {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: #fff;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.candle::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+}
+#text{color: darkblue;}
